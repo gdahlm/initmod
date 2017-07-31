@@ -10,5 +10,5 @@ wheel:
 clean:
 	git clean -Xdf
 
-dist-clean:
+distclean:
 	git clean -xdf
