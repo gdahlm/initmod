@@ -17,15 +17,15 @@ Basic tasks for new Module
 --------------------------
 
 Move initmod directory to new name::
-    mv initmod newname
+    $ mv initmod newname
 
 Edit setup.py to reflect the new project
 
 Find *nose* tests to change with the following::
-      grep -ir "initmod" tests
+    $ grep -ir "initmod" tests
 
 or use sed::
-      sed -i 's/initmod/newname/g' tests/*
+    $ sed -i 's/initmod/newname/g' tests/*
 
 where *newname* is the name of the project
 
