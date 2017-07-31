@@ -32,6 +32,13 @@ Basic tasks for new Module
 
   where *newname* is the name of the project
 
+- Destroy upstream git repo and create a new one::
+
+    $ rm -rf .git
+    $ git init
+    $ git add .
+    $ git commit -am "Initial Commit"
+
 - Code
 
 - Profit
