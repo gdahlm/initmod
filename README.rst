@@ -16,16 +16,18 @@ If not I say **Fail Forward**
 Basic tasks for new Module
 --------------------------
 
-# Move initmod directory to new name
-# Edit setup.py to reflect the new project
-# run::
-    grep -ir "initmod" tests
+- Move initmod directory to new name
+- Edit setup.py to reflect the new project
+- run::
+      grep -ir "initmod" tests
+
   and edit files manually or run::
-    sed -i 's/initmod/newname/g' tests/*
+      sed -i 's/initmod/newname/g' tests/*
+
   where *newname* is the name of the project
 
-# Code
-# Profit
+- Code
+- Profit
 
 Setup docs Directory with Sphinx
 --------------------------------
