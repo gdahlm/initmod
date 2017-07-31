@@ -16,12 +16,13 @@ If not I say **Fail Forward**
 Basic tasks for new Module
 --------------------------
 
-- Move initmod directory to new name
+- Move initmod directory to new name::
+    mv initmod newname
 - Edit setup.py to reflect the new project
-- run::
+- Find *nose* tests to change with the following::
       grep -ir "initmod" tests
 
-  and edit files manually or run::
+  or use sed::
       sed -i 's/initmod/newname/g' tests/*
 
   where *newname* is the name of the project
