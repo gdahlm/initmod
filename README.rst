@@ -16,19 +16,22 @@ If not I say **Fail Forward**
 Basic tasks for new Module
 --------------------------
 
-- Move initmod directory to new name::
+Move initmod directory to new name::
     mv initmod newname
-- Edit setup.py to reflect the new project
-- Find *nose* tests to change with the following::
+
+Edit setup.py to reflect the new project
+
+Find *nose* tests to change with the following::
       grep -ir "initmod" tests
 
-  or use sed::
+or use sed::
       sed -i 's/initmod/newname/g' tests/*
 
-  where *newname* is the name of the project
+where *newname* is the name of the project
 
-- Code
-- Profit
+Code
+
+Profit
 
 Setup docs Directory with Sphinx
 --------------------------------
